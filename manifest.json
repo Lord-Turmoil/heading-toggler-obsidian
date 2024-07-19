@@ -1,0 +1,11 @@
+{
+	"id": "heading-toggler-obsidian",
+	"name": "Heading Toggler",
+	"version": "1.0.0",
+	"minAppVersion": "0.1.0",
+	"description": "Easily toggle heading levels in Markdown documents with shortcuts.",
+	"author": "Lord Turmoil",
+	"authorUrl": "https://tonys-studio.top/",
+	"fundingUrl": "https://www.tonys-studio.top/support/",
+	"isDesktopOnly": false
+}
