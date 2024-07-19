@@ -26,7 +26,7 @@ You can bind these commands with your favorite hotkeys in the options. 😉
 
 1. Go to the release page of [heading-toggler-obsidian](https://github.com/Lord-Turmoil/heading-toggler-obsidian/releases).
 2. Download the plugin files (`main.js` and `manifest.json`).
-3. Place them in the plugin folder in the Obsidian vault, e.g. `.obsidian/plugins/heading-toggler-obsidian`. You may need to create a new directory.
+3. Place them in the plugin folder in the Obsidian vault, e.g. `.obsidian/plugins/heading-toggler`. You may need to create a new directory.
 4. Go to "Community plugins" > "Installed plugins" to enable it.
 
 ## Contributing
@@ -40,13 +40,13 @@ Clone the repository: [heading-toggler-obsidian](https://github.com/Lord-Turmoil
 For Windows users, you can use `mklink`.
 
 ```cmd
-mklink /D heading-toggler-obsidian path\to\your\repository
+mklink /D heading-toggler path\to\your\repository
 ```
 
 For Linux users, you can use `ln`.
 
 ```bash
-ln -s heading-toggler-obsidian path/to/your/repository
+ln -s heading-toggler path/to/your/repository
 ```
 
 ### Development
