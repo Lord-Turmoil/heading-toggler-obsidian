@@ -35,7 +35,7 @@ Improvement of this plugin is welcomed. 😋
 
 ### Project Setup
 
-Clone the repository: <https://github.com/Lord-Turmoil/heading-toggler-obsidian>. If you don't want to develop it inside the Obsidian vault, you can create a link to the repository.
+Clone the repository: [heading-toggler-obsidian](https://github.com/Lord-Turmoil/heading-toggler-obsidian). If you don't want to develop it inside the Obsidian vault, you can create a link to the repository.
 
 For Windows users, you can use `mklink`.
 
