@@ -1,24 +1,24 @@
-import { App, Modal, Notice, Plugin, PluginSettingTab, Setting, Editor } from 'obsidian';
+import { App, Modal, Notice, Plugin, PluginSettingTab, Setting, Editor, MarkdownView } from 'obsidian';
 
 export default class HeadingTogglerPlugin extends Plugin {
   async onload() {
     this.addCommand({
       id: 'increase-heading-level',
       name: 'Increase heading level',
-      callback: () => this.toggleHeading('increase')
+      editorCallback: (editor: Editor) => this.toggleHeading(editor, 'increase')
     });
 
     this.addCommand({
       id: 'decrease-heading-level',
       name: 'Decrease heading level',
-      callback: () => this.toggleHeading('decrease')
+      editorCallback: (editor: Editor) => this.toggleHeading(editor, 'decrease')
     });
 
     for (let i = 1; i <= 6; i++) {
       this.addCommand({
         id: `toggle-heading-level-${i}`,
         name: `Toggle heading level to H${i}`,
-        callback: () => this.toggleHeading('toggle', i)
+        editorCallback: (editor: Editor) => this.toggleHeading(editor, 'toggle', i)
       });
     }
   }
@@ -40,13 +40,7 @@ export default class HeadingTogglerPlugin extends Plugin {
     return level === 0 ? text : '#'.repeat(level) + ' ' + text;
   }
 
-  toggleHeading(operation: 'increase' | 'decrease' | 'toggle', targetLevel: number | null = null) {
-    const editor = this.app.workspace.activeEditor?.editor;
-    if (!editor) {
-      new Notice("No active editor found");
-      return;
-    }
-
+  toggleHeading(editor: Editor, operation: 'increase' | 'decrease' | 'toggle', targetLevel: number | null = null) {
     const line = editor.getCursor().line;
     const text = editor.getLine(line);
     if (operation === 'increase') {
