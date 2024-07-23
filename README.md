@@ -29,6 +29,28 @@ You can bind these commands with your favorite hotkeys in the options. 😉
 3. Place them in the plugin folder in the Obsidian vault, e.g. `.obsidian/plugins/heading-toggler`. You may need to create a new directory.
 4. Go to "Community plugins" > "Installed plugins" to enable it.
 
+## Limitations
+
+By default, Obsidian doesn't support nested headings, which means only the H1 in the following Markdown will be rendered as expected.
+
+```markdown
+# Normal H1
+
+- ## H2 in list
+
+> ### H3 in quotes
+```
+
+Therefore, this plugin won't apply nested headings and takes listing and quotes as normal text as below.
+
+```markdown
+# Normal H1
+
+## - H2 in list
+
+### > H3 in quotes
+```
+
 ## Contributing
 
 Improvement of this plugin is welcomed. 😋
@@ -56,3 +78,4 @@ This plugin is quite simple, all logics are in `main.ts`.
 - `npm run dev`: build the plugin for development.
 - `npm run build`: build the plugin for production.
 - `npm run version`: update version.
+
