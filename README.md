@@ -2,6 +2,14 @@
 
 > Copyright &copy; Tony's Studio 2024
 
+---
+
+<div style="text-align:center">
+<img src="https://img.shields.io/github/manifest-json/v/lord-turmoil/heading-toggler-obsidian?color=crimson&label=version&style=for-the-badge" alt="GitHub manifest version" />
+<img src="https://img.shields.io/badge/dynamic/json?logo=obsidian&color=%23483699&label=downloads&query=%24%5B%22heading-toggler%22%5D.downloads&url=https%3A%2F%2Fraw.githubusercontent.com%2Fobsidianmd%2Fobsidian-releases%2Fmaster%2Fcommunity-plugin-stats.json&style=for-the-badge" alt="Obsidian Downloads" />
+</div>
+
+
 ## Overview
 
 This plugin allows you to toggle heading levels quickly. You can bind hotkeys to increase or decrease heading levels without typing those `#` characters. 😀
