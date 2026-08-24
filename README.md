@@ -1,6 +1,6 @@
 # Heading Toggler for Obsidian
 
-> Copyright &copy; Tony's Studio 2024
+> Copyright &copy; Tony's Studio 2024 - 2026
 
 ---
 
@@ -61,29 +61,4 @@ Therefore, this plugin won't apply nested headings and takes listing and quotes 
 
 ## Contributing
 
-Improvement of this plugin is welcomed. 😋
-
-### Project Setup
-
-Clone the repository: [heading-toggler-obsidian](https://github.com/Lord-Turmoil/heading-toggler-obsidian). If you don't want to develop it inside the Obsidian vault, you can create a link to the repository.
-
-For Windows users, you can use `mklink`.
-
-```cmd
-mklink /D heading-toggler path\to\your\repository
-```
-
-For Linux users, you can use `ln`.
-
-```bash
-ln -s heading-toggler path/to/your/repository
-```
-
-### Development
-
-This plugin is quite simple, all logics are in `main.ts`.
-
-- `npm run dev`: build the plugin for development.
-- `npm run build`: build the plugin for production.
-- `npm run version`: update version.
-
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute to this project or build it by yourself.
