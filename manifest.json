@@ -1,7 +1,7 @@
 {
 	"id": "heading-toggler",
 	"name": "Heading Toggler",
-	"version": "1.1.3",
+	"version": "1.1.4",
 	"minAppVersion": "1.0.0",
 	"description": "Easily toggle heading levels in Markdown documents with shortcuts.",
 	"author": "Lord Turmoil",
