@@ -1,12 +1,10 @@
-import { App, Modal, Notice, Plugin, PluginSettingTab, Setting, Editor, MarkdownView } from 'obsidian';
+import { Plugin, Editor } from 'obsidian';
 import { EditorService } from './editorService';
 
 export default class HeadingTogglerPlugin extends Plugin {
-    editorService: EditorService;
+    editorService: EditorService = new EditorService();
 
     async onload() {
-        this.editorService = new EditorService();
-
         this.addCommand({
             id: 'increase-heading-level',
             name: 'Increase heading level',
